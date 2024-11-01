@@ -4,5 +4,4 @@ ARRPATH=/mnt/Storage/ # in Windows it will be sth like ARRPATH=C:\myfolder\Arr\
 # Global Variables
 PUID=1000
 PGID=1000
-TZ=Europe/London
-
+TZ=Africa/Johannesburg
