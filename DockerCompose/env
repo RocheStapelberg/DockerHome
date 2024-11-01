@@ -1,5 +1,5 @@
 # Main path for all ARR apps:
-ARRPATH=/mnt/Storage/Arr # in Windows it will be sth like ARRPATH=C:\myfolder\Arr\
+ARRPATH=/mnt/Storage/Arr/ # in Windows it will be sth like ARRPATH=C:\myfolder\Arr\
 
 # Global Variables
 PUID=1000
