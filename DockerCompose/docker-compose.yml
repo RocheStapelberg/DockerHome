@@ -180,3 +180,19 @@ services:
     env_file:
       - '.env'
 
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    hostname: jellyseerr
+    environment:
+      - LOG_LEVEL=info
+      - TZ=Africa/Johannesburg
+    volumes:
+      - ${ARRPATH}Jellyseerr/config:/app/config
+      - ${ARRPATH}Jellyseerr/database:/app/db
+    ports:
+      - 5055:5055
+    restart: unless-stopped
+    env_file:
+      - '.env'
+
