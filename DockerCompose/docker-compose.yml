@@ -65,27 +65,6 @@ services:
     env_file:
       - '.env'
       
-# ██╗     ██╗██████╗  █████╗ ██████╗ ██████╗ 
-# ██║     ██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗
-# ██║     ██║██║  ██║███████║██████╔╝██████╔╝
-# ██║     ██║██║  ██║██╔══██║██╔══██╗██╔══██╗
-# ███████╗██║██████╔╝██║  ██║██║  ██║██║  ██║
-# ╚══════╝╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
-                                             
-  lidarr:
-    image: linuxserver/lidarr:latest
-    container_name: lidarr
-    hostname: lidarr
-    volumes:
-      - ${ARRPATH}Lidarr/config:/config
-      - ${ARRPATH}Lidarr/music:/data/musicfolder
-      - ${ARRPATH}Downloads:/downloads
-    ports:
-      - 8686:8686
-    restart: unless-stopped
-    env_file:
-      - '.env'
-      
 # ██████╗ ███████╗ █████╗ ██████╗  █████╗ ██████╗ ██████╗ 
 # ██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔══██╗
 # ██████╔╝█████╗  ███████║██║  ██║███████║██████╔╝██████╔╝
@@ -93,19 +72,19 @@ services:
 # ██║  ██║███████╗██║  ██║██████╔╝██║  ██║██║  ██║██║  ██║
 # ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
                                                                                                                    
-  readarr:
-    image: linuxserver/readarr:develop
-    container_name: readarr
-    hostname: readarr
-    volumes:
-      - ${ARRPATH}Readarr/config:/config
-      - ${ARRPATH}Readarr/books:/data/books
-      - ${ARRPATH}Downloads:/downloads
-    ports:
-      - 8787:8787
-    restart: unless-stopped
-    env_file:
-      - '.env'
+#  readarr:
+#    image: linuxserver/readarr:develop
+#    container_name: readarr
+#    hostname: readarr
+#    volumes:
+#      - ${ARRPATH}Readarr/config:/config
+#      - ${ARRPATH}Readarr/books:/data/books
+#      - ${ARRPATH}Downloads:/downloads
+#    ports:
+#      - 8787:8787
+#    restart: unless-stopped
+#    env_file:
+#      - '.env'
 
 # ██╗  ██╗ ██████╗ ███╗   ███╗ █████╗ ██████╗ ██████╗ 
 # ██║  ██║██╔═══██╗████╗ ████║██╔══██╗██╔══██╗██╔══██╗
